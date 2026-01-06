@@ -1,16 +1,16 @@
-/* === Global Styling === */
+/* ===== Global Styles ===== */
 body {
-  font-family: 'Poppins', sans-serif;
-  color: #333;
-  scroll-behavior: smooth;
+  background-color: #E0E1DD;
+  color: #0D1B2A;
+  font-family: "Montserrat", sans-serif;
 }
 :root {
-  --primary-color: #1d4ed8;
+  --primary-color: #1B263B;
   --accent-color: #f97316;
   --background-color: #f9fafb;
-  --text-color: #333;
-  --heading-font: 'Poppins', sans-serif;
-  --body-font: 'Inter', sans-serif;
+  --text-color: #1b1a1a;
+  --heading-font: 'Montserrat', sans-serif;
+  --body-font: 'Montserrat', sans-serif;
 }
 
 body {
@@ -20,26 +20,32 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Navbar */
+/* ===== Navbar ===== */
 .navbar {
-  background-color: #fff;
+  background: linear-gradient(90deg, #0D1B2A, #1B263B);
 }
-.nav-link {
-  color: #555 !important;
-  font-weight: 500;
-}
-.nav-link:hover,
-.nav-link.active {
-  color: var(--primary-color) !important;
+.navbar-brand, .nav-link {
+  color: #E0E1DD !important;
 }
 
-/* Buttons */
-.btn-primary {
-  background-color: var(--primary-color);
-  border: none;
+.nav-link:hover {
+  color: #f8f8f8 !important;
 }
+
+/* ===== Buttons ===== */
+.btn-primary {
+  background-color: #1B263B;
+  border-color: #1B263B;
+  color: #E0E1DD;
+  transition: 0.3s ease;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
 .btn-primary:hover {
-  background-color: #0f3cb3;
+  background-color: #415A77;
+  border-color: #415A77;
+  color: #FFFFFF;
 }
 
 /* Headings */
@@ -53,7 +59,7 @@ h1, h2, h3, h4, h5 {
   background-color: #ffffff;
 }
 .nav-link {
-  color: #555 !important;
+  color: #E0E1DD !important;
   font-weight: 500;
   transition: color 0.3s ease;
 }
@@ -75,7 +81,9 @@ h1, h2, h3, h4, h5 {
 /* Projects Section */
 .card {
   border: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #F8F9FA;
+  box-shadow: 0 4px 10px rgba(13, 27, 42, 0.1);
+  transition: transform 0.3s ease;
 }
 .card:hover {
   transform: translateY(-5px);
@@ -87,7 +95,12 @@ h1, h2, h3, h4, h5 {
 }
 #mywork .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(13, 27, 42, 0.1);
+}
+.card-title {
+  color: #0D1B2A;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 /* === Contact Section === */
@@ -95,11 +108,11 @@ h1, h2, h3, h4, h5 {
   background-color: #f8f9fa;
 }
 #contact .btn-primary {
-  background-color: #007bff;
+  background-color: #1B263B;
   border: none;
 }
 #contact .btn-primary:hover {
-  background-color: #0056b3;
+  background-color: #415A77;
 }
 
 /* === Footer === */
@@ -115,6 +128,12 @@ footer small {
   font-weight: 600;    /* Makes it bolder */
   color: #222;         /* Darker text for better contrast */
   margin-bottom: 0.75rem;
+}
+footer {
+  background-color: #0D1B2A;
+  color: #E0E1DD;
+  padding: 30px 0;
+  text-align: center;
 }
 /* ---- Card Styling ---- */
 .card {
@@ -160,19 +179,107 @@ footer small {
 .card .btn {
   align-self: center;
   margin-top: 1rem;
-  background-color: #007bff; /* Instagram-like pink */
+  background-color: #1B263B; /* Instagram-like pink */
   border: none;
-  color: #fff;
+  color: #E0E1DD;
   font-weight: 500;
   transition: all 0.3s ease;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
 .card .btn:hover {
-  background-color: #c92d62;
+  background-color: #415A77;
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 #projects .card-body {
   text-align: center;
+}
+.list-spaced li {
+  margin-bottom: 8px;
+}
+.back-button {
+  margin-bottom: 3rem;  /* Adjust spacing between button and next title */
+}
+.project-container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.project-section {
+  margin-bottom: 60px; /* THIS is the spacing you're missing */
+  text-align: center;
+}
+
+.project-section h2,
+.project-section h3 {
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.project-section p,
+.project-section ul {
+  text-align: left; /* better readability */
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.project-section ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.image-section img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.image-caption {
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+/* Each project block */
+.project-block {
+    padding: 60px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.project-block:last-child {
+    border-bottom: none;
+}
+
+/* Section titles */
+.section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+/* Subsection titles */
+.subsection-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+/* Text */
+.section-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #0D1B2A;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Lists */
+.section-list li {
+    margin-bottom: 8px;
+    line-height: 1.6;
 }
