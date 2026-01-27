@@ -25,7 +25,7 @@ export default function App() {
           <div className="flex items-center justify-between h-16">
             {/* Logo/Name */}
             <div className="text-xl font-semibold text-gray-900">
-              Your Name
+              Kevin Nguyen
             </div>
 
             {/* Desktop Navigation */}
@@ -42,12 +42,12 @@ export default function App() {
               >
                 Projects
               </button>
-              <button
+              {/* <button
                 onClick={() => scrollToSection('work')}
                 className="text-gray-600 hover:text-gray-900 transition-colors"
               >
                 My Work
-              </button>
+              </button> */}
               <button
                 onClick={() => scrollToSection('contact')}
                 className="text-gray-600 hover:text-gray-900 transition-colors"
@@ -55,7 +55,7 @@ export default function App() {
                 Contact
               </button>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/k-nguyen25/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900 transition-colors"
@@ -91,12 +91,12 @@ export default function App() {
               >
                 Projects
               </button>
-              <button
+              {/* <button
                 onClick={() => scrollToSection('work')}
                 className="block w-full text-left px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md transition-colors"
               >
                 My Work
-              </button>
+              </button> */}
               <button
                 onClick={() => scrollToSection('contact')}
                 className="block w-full text-left px-3 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-md transition-colors"
@@ -122,7 +122,7 @@ export default function App() {
         <Hero />
         <About />
         <FeaturedProjects />
-        <MyWork />
+        {/* <MyWork /> */}
         <Contact />
       </main>
 
@@ -130,7 +130,7 @@ export default function App() {
       <footer className="bg-gray-50 border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center text-gray-600">
-            <p>&copy; 2026 Your Name. All rights reserved.</p>
+            <p>&copy; 2026 Kevin Nguyen.</p>
           </div>
         </div>
       </footer>

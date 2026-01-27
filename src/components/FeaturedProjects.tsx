@@ -5,10 +5,10 @@ export function FeaturedProjects() {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A modern e-commerce solution with seamless user experience and robust backend architecture.',
+      title: 'Associate Supplier Program',
+      description: 'Managed the Associate Supplier Program supporting promotional content across Petro-Canada stations.',
       image: 'https://images.unsplash.com/photo-1648260295976-de09f77ab469?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXNpZ24lMjBwcm9qZWN0fGVufDF8fHx8MTc2ODkwOTE3MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      tags: ['Web Design', 'Development', 'UI/UX']
+      tags: ['Management', 'Communication', 'Detail-Oriented',]
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ export function FeaturedProjects() {
           <h2 className="text-4xl mb-4 text-gray-900">Featured Projects</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto mb-4"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            A selection of recent projects that showcase my skills and passion for creating exceptional digital experiences.
+            A showcase of projects highlighting my creativity, strategy, and ability to drive meaningful results.
           </p>
         </div>
 

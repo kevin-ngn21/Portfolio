@@ -20,13 +20,13 @@ export function Hero() {
           {/* Hero Text */}
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-4xl md:text-6xl mb-4 text-gray-900">
-              Hello, I'm <span className="text-blue-600">Your Name</span>
+              Hello, I'm <span className="text-blue-600">Kevin Nguyen</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-6">
-              Creative Professional & Problem Solver
+              SAIT Marketing Graduate
             </p>
             <p className="text-lg text-gray-500 max-w-2xl">
-              Passionate about creating beautiful, functional experiences that make a difference.
+              Bringing ideas to life through creativity and dedication.
             </p>
           </div>
         </div>
