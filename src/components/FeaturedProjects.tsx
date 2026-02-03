@@ -7,22 +7,22 @@ export function FeaturedProjects() {
       id: 1,
       title: 'Associate Supplier Program',
       description: 'Managed the Associate Supplier Program supporting promotional content across Petro-Canada stations.',
-      image: 'https://images.unsplash.com/photo-1648260295976-de09f77ab469?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXNpZ24lMjBwcm9qZWN0fGVufDF8fHx8MTc2ODkwOTE3MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: '../../images/PC-Sign.jpg',
       tags: ['Management', 'Communication', 'Detail-Oriented',]
     },
     {
       id: 2,
-      title: 'Mobile Banking App',
-      description: 'Intuitive mobile banking application focused on security and ease of use.',
-      image: 'https://images.unsplash.com/photo-1609921212029-bb5a28e60960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBkZXNpZ258ZW58MXx8fHwxNzY4OTA4MzA3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      tags: ['Mobile', 'App Design', 'Fintech']
+      title: 'Petro-Canada: Fall Campaign',
+      description: 'Developed key visuals and messaging for Petro-Canada’s Fall 2023 promotion on Instagram.',
+      image: '../../images/PC-Sign.jpg',
+      tags: ['Social Media', 'Creative Design', 'Messaging']
     },
     {
       id: 3,
-      title: 'Creative Portfolio',
-      description: 'A stunning portfolio website showcasing creative work with smooth animations and interactions.',
-      image: 'https://images.unsplash.com/photo-1519217651866-847339e674d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMHdvcmtzcGFjZXxlbnwxfHx8fDE3Njg4NTQyMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      tags: ['Portfolio', 'Web Design', 'Animation']
+      title: 'Petro-Canada: Halloween Campaign',
+      description: 'Developed a Halloween promotion for Petro-Canada.',
+      image: '../../images/PC-Sign.jpg',
+      tags: ['Social Media', 'Creative Design', 'Messaging']
     }
   ];
 
