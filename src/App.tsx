@@ -5,9 +5,11 @@ import { About } from './components/About';
 import { FeaturedProjects } from './components/FeaturedProjects';
 import { MyWork } from './components/MyWork';
 import { Contact } from './components/Contact';
+import { ProjectDetails } from './components/ProjectDetails';
 
 export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState<'home' | 'projects'>('home');
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -17,6 +19,22 @@ export default function App() {
     }
   };
 
+  const navigateToProjects = () => {
+    setCurrentPage('projects');
+    window.scrollTo(0, 0);
+  };
+
+  const navigateToHome = () => {
+    setCurrentPage('home');
+    window.scrollTo(0, 0);
+  };
+
+  // If we're on the projects detail page, show that component
+  if (currentPage === 'projects') {
+    return <ProjectDetails onBack={navigateToHome} />;
+  }
+
+  // Otherwise show the main portfolio page
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation Bar */}
@@ -121,7 +139,7 @@ export default function App() {
       <main className="pt-16">
         <Hero />
         <About />
-        <FeaturedProjects />
+        <FeaturedProjects onLearnMore={navigateToProjects} />
         {/* <MyWork /> */}
         <Contact />
       </main>
@@ -130,7 +148,7 @@ export default function App() {
       <footer className="bg-gray-50 border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center text-gray-600">
-            <p>&copy; 2026 Kevin Nguyen.</p>
+            <p>&copy; 2026 Your Name. All rights reserved.</p>
           </div>
         </div>
       </footer>

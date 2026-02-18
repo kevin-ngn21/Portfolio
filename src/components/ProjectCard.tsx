@@ -12,9 +12,10 @@ interface Project {
 
 interface ProjectCardProps {
   project: Project;
+  onLearnMore: () => void;
 }
 
-export function ProjectCard({ project }: ProjectCardProps) {
+export function ProjectCard({ project, onLearnMore }: ProjectCardProps) {
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
       <div className="relative h-64 overflow-hidden">
@@ -42,7 +43,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           ))}
         </div>
         
-        <button className="inline-flex items-center text-blue-600 hover:text-blue-700 transition-colors group">
+        <button className="inline-flex items-center text-blue-600 hover:text-blue-700 transition-colors group" onClick={onLearnMore}>
           Learn More
           <ArrowRight className="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
         </button>
